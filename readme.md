@@ -33,4 +33,14 @@ Git语句
     ```
     git branch test                 //建立test分支
     git checkout test               //HEAD切换到test分支
+
+    touch test.txt
+    git add .
+    git commit -m "test branch"
+    git push -u origin test         //上传到远程仓库并在远程仓库创建新分支test
+    ```
+* 合并分支
+    ```
+    git checkout master
+    git merge test
     ```
