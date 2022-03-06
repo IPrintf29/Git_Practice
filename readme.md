@@ -43,4 +43,11 @@ Git语句
     ```
     git checkout master
     git merge test
+
+    git push -u origin              //全部上传至远程仓库
+    ```
+* 回退至某个版本
+    ```
+    git log --oneline               //查看commit记录的sha码
+    git reset --hard 5bdb28d        //回退到sha码对应版本
     ```
